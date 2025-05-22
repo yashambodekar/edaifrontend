@@ -1,0 +1,88 @@
+.loan-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px var(--shadow-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.loan-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px var(--shadow-color);
+}
+
+.loan-card.selected {
+  border: 2px solid var(--primary-color);
+}
+
+.loan-card-header {
+  background:linear-gradient(to right, #166534, #22c55e);
+  color: white;
+  padding: 15px;
+}
+
+.loan-name {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.bank-name {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.loan-card-body {
+  padding: 15px;
+  flex-grow: 1;
+}
+
+.loan-info-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.info-label {
+  color: #666;
+  font-weight: 500;
+}
+
+.info-value {
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.loan-card-footer {
+  padding: 15px;
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.view-details-btn {
+  background: linear-gradient(to right, #166534, #22c55e);;
+  width: 100%;
+}
+
+.compare-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 5px;
+}
+
+.compare-checkbox input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--primary-color);
+}
+
+.compare-checkbox label {
+  font-size: 14px;
+  color: var(--text-color);
+  cursor: pointer;
+}

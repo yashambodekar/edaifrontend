@@ -1,0 +1,139 @@
+.loan-details-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.loan-details-modal {
+  background-color: white;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 800px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.loan-details-header {
+  padding: 20px;
+  background: linear-gradient(to right, #166534, #22c55e);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.loan-details-header h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.loan-details-tabs {
+  display: flex;
+  border-bottom: 1px solid var(--border-color);
+  /* background:linear-gradient(to right, #166534, #22c55e); */
+  position: sticky;
+  top: 64px;
+  z-index: 5;
+}
+
+
+.tab-btn {
+  padding: 15px 20px;
+  background:none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex: 1;
+  text-align: center;
+}
+
+.tab-btn:hover {
+  background-color: #f5f5f5;
+}
+
+.tab-btn.active {
+  border-bottom-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.loan-details-content {
+  padding: 20px;
+}
+
+.loan-details-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.loan-detail-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.detail-item {
+  flex: 1;
+  min-width: 200px;
+}
+
+.detail-item.full-width {
+  flex-basis: 100%;
+}
+
+.detail-item h4 {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.detail-item p {
+  font-size: 16px;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.loan-detail-actions {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .loan-details-tabs {
+    flex-direction: column;
+  }
+
+  .tab-btn {
+    border-bottom: none;
+    border-left: 3px solid transparent;
+  }
+
+  .tab-btn.active {
+    border-bottom: none;
+    border-left-color: var(--primary-color);
+  }
+}

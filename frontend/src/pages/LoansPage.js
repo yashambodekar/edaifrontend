@@ -88,7 +88,7 @@ const LoansPage = () => {
       <div className="loans-header">
         <h1 className="page-title">Available Education Loans</h1>
         <p className="filter-info">
-          Showing loans for amount: ₹{amount}, max interest: {maxInterest}%, collateral: {collateral}
+          Based on your Requirements: ₹{amount}, max interest: {maxInterest}%
         </p>
       </div>
 

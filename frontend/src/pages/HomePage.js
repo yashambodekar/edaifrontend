@@ -55,7 +55,7 @@ const HomePage = () => {
     <div className="home-page">
       <section className="hero-section">
         <div className="hero-content">
-          <h1 className="hero-title">Find the Perfect Education Loan</h1>
+          <h1 className="hero-title">Find the Perfect Education Loan for Your Future</h1>
           <p className="hero-subtitle">
             Compare education loans from various banks and financial institutions to find the best option for your
             academic journey.

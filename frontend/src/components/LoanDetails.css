@@ -51,7 +51,7 @@
 .loan-details-tabs {
   display: flex;
   border-bottom: 1px solid var(--border-color);
-  /* background:linear-gradient(to right, #166534, #22c55e); */
+  background-color: white;
   position: sticky;
   top: 64px;
   z-index: 5;

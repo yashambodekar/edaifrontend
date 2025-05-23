@@ -25,7 +25,7 @@ const LoanCard = ({ loan, onClick, onCompareToggle, isSelected }) => {
         </div>
       </div>
       <div className="loan-card-footer">
-        <button className="btn btn-primary view-details-btn" onClick={onClick}>
+        <button className="view-details-btn" onClick={onClick}>
           View Details
         </button>
         <div className="compare-checkbox">

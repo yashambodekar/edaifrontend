@@ -64,8 +64,14 @@
 }
 
 .view-details-btn {
-  background: linear-gradient(to right, #166534, #22c55e);;
-  width: 100%;
+  background: linear-gradient(to right, #166534, #22c55e);
+  padding: 10px;
+  border-radius: 10px;
+  border-color: white;
+  color: #f3f3f3;
+  font-weight: bold;
+  font-size: 18px;
+  box-shadow: none;
 }
 
 .compare-checkbox {
